@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid black; */
+}
+
+/* ###################### Home Section Styling ##########################  */
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/Back.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    /* border: 8px solid red; */
+}
+
+.navbar{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(23, 190, 140);
+    position: fixed;
+    /* border: 2px solid black; */
+}
+
+.nav_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.nav_container .logo h1{
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 26px;
+    /* text-transform: uppercase; */
+    /* font-style: italic; */
+}
+
+.nav-items ul{
+    display: flex;
+}
+
+.nav-items ul li{
+    list-style: none;
+    margin-left: 25px;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-items ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-items ul li a:hover::after{
+    width: 100%;
+}
+
+/* ###################### Section-1 Styling ##########################  */
+
+.section-1{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    /* position: relative; */
+    /* height: 100vh; */
+    /* transform: translatey(-50%); */
+    /* border: 2px solid black; */
+}
+
+
+.section-1 .content .heading{
+    text-align: center;
+    font-size: 84px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-1 .content p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.section-1 .content .btn{
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.section-1 .content .btn a{
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    letter-spacing: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.section-1 .content .btn a:hover{
+    background-color: #ffffff;
+    color: rgb(23, 190, 140);
+}
+
+/* ###################### Section-2 Styling ##########################  */
+
+
+.section-2{
+    padding: 150px;
+    border-bottom: 3px solid rgb(23, 190, 140);
+}
+
+.header{
+    text-align: center;
+    color: #222222;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.describe{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555555;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.section-2 .box-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+}
+
+.section-2 .box-wrapper .box{
+    padding: 30px;
+    /* border: 2px solid black; */
+}
+
+.section-2 .box-wrapper .box .icon{
+    text-align: center;
+    font-size: 28px;
+    color: rgb(23, 190, 140);
+    /* border: 2px solid black; */
+}
+
+.section-2 .box-wrapper .box h3{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #222222;
+    letter-spacing: 1px;
+}
+
+.section-2 .box-wrapper .box p{
+    text-align: center;
+    font-size: 16px;
+    color: #555555;
+    font-weight: 400;
+}
+
+
+/* ###################### Section-2 Styling ##########################  */
+
+.section-3{
+    padding: 150px;
+}
+
+.float{
+    display: flex;
+    margin-top: 50px;
+}
+
+.text-box{
+    padding: 0px 40px;
+}
+
+.pera{
+    margin-bottom: 10px;
+}
+
+.pera h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    letter-spacing: 1px;
+}
+
+.pera p{
+    font-size: 16px;
+    color: #666666;
+    letter-spacing: .4px;
+}
+
+/* ###################### Section-2 Styling ##########################  */
+
+.section-4{
+    padding: 150px;
+    background-color: #efefef;
+}
+
+.section-4 .contact{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* align-items: center; */
+    /* border: 2px solid black; */
+}
+
+.section-4 .contact .wrap{
+    padding: 30px 60px;
+    /* border: 2px solid black; */
+}
+
+.section-4 .contact .wrap .icon{
+    padding: 10px 0;
+    text-align: center;
+}
+
+.section-4 .contact .wrap .icon a{
+    font-size: 26px;
+    color: rgb(23, 190, 140);
+    /* border: 2px solid black; */
+}
+
+.section-4 .contact .wrap p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #555555;
+    letter-spacing: .3px;
+}
+
+
+/* ###################### Footer Section Styling ##########################  */
+
+footer{
+    width: 100%;
+    background-color: rgb(23, 190, 140);
+}
+
+.footer_container{
+    padding: 25px;
+}
+
+.foot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot .copy{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.foot ul {
+    display: flex;
+}
+
+.foot ul li{
+    list-style: none;
+    margin-left: 15px;
+}
+
+
+.foot ul li a i{
+    font-size: 19px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    color: rgb(23, 190, 140);
+    background-color: #ffffff;
+    padding: 6px 0;
+    /* border: 2px solid black; */
+}
